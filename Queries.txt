@@ -1,0 +1,122 @@
+🧩 1. Basic SELECT Queries
+
+Show all records from the table.
+
+Display only Manufacturer, Model, and Price.
+
+Show all cars manufactured after 2015.
+
+List all Distinct fuel types.
+
+Display the top 10 cheapest cars.
+
+Show all cars where the manufacturer is “Ford”.
+
+Show cars having mileage more than 100000.
+
+Show models whose price is between 10,000 and 20,000.
+
+List all cars with fuel type “Diesel” or “Hybrid”.
+
+Display cars ordered by Price descending.
+
+⚙️ 2. Filtering & Conditions
+
+Find all petrol cars made after 2010.
+
+List all manufacturers with models that have mileage under 50,000.
+
+Display all cars priced above the average price.
+
+Show all cars where Manufacturer starts with ‘T’.
+
+Find cars whose model name ends with ‘a’.
+
+Display all rows with missing (NULL) engine size (if any).
+
+Find all cars having price between 5000 and 25000 and mileage under 60,000.
+
+Show the newest car for each fuel type.
+
+📊 3. Aggregation Functions
+
+Find the total number of cars.
+
+Calculate the average price of all cars.
+
+Get the minimum and maximum mileage.
+
+Find the average price for each manufacturer.
+
+Show total number of models per manufacturer.
+
+Display average engine size by fuel type.
+
+Find the count of cars made each year.
+
+Find which year had the highest average car price.
+
+🔗 4. GROUP BY and HAVING
+
+Group cars by Manufacturer and show their average mileage.
+
+Find manufacturers having more than 1000 cars in the dataset.
+
+List fuel types with an average price above 20,000.
+
+Show each fuel type’s count, ordered by descending average price.
+
+Find manufacturers with average engine size greater than 2.0.
+
+🧠 5. Subqueries
+
+Find all cars whose price is higher than the overall average price.
+
+Find manufacturers having at least one car priced above 40,000.
+
+Display cars that have the same price as the most expensive Ford car.
+
+List models whose mileage is below the manufacturer’s average mileage.
+
+Show the oldest car(s) in the dataset.
+
+Get cars made in the same year as the most expensive car.
+
+🚀 6. Advanced Joins (for practice with dummy tables)
+
+Let’s assume you create another table:
+
+CREATE TABLE manufacturer_country (
+  Manufacturer VARCHAR(50),
+  Country VARCHAR(50)
+);
+
+
+Then try:
+38. Join car_sales_data with manufacturer_country to show manufacturer and country.
+39. List average price per country.
+40. Find top 3 most expensive manufacturers per country.
+
+🧾 7. Window Functions (if using MySQL 8+)
+
+Rank cars by price within each manufacturer.
+
+Find the most expensive car per manufacturer using RANK().
+
+Calculate the running total of prices ordered by year.
+
+Show the difference between each car’s price and its manufacturer’s average price.
+
+Get top 5 newest cars overall using ROW_NUMBER().
+
+💡 8. Data Cleaning / Formatting
+
+Replace NULL Engine size with average engine size.
+
+Update prices: increase all car prices by 5%.
+
+Delete rows where mileage is above 300,000 (outliers).
+
+Add a new column Age = (2025 - Year of manufacture).
+
+Show cars grouped by age category (e.g., <5 years = “New”, 5–10 = “Mid”, 10+ = “Old”).
